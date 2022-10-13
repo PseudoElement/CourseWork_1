@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Raleway:wght@100;200;300;400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a {
+  background: none;
+}
+
+a :focus,
+a :active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 20px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button ::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a :visited {
+  text-decoration: none;
+}
+
+a :hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: #000;
+}
+header .header_wrapper {
+  margin: 0 1rem 0 5.764rem;
+  height: 3.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .header_wrapper nav {
+  width: 28.5rem;
+  margin-right: 8.5rem;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-transform: capitalize;
+}
+header .header_wrapper nav a {
+  color: white;
+}
+header .header_wrapper nav a:hover {
+  color: goldenrod;
+  transition: all 0.4s;
+}
+header .header_wrapper .menu {
+  display: none;
+}
+
+main section {
+  padding: 0 8.5rem;
+}
+main section.section1 {
+  margin-top: 3.6rem;
+  background: url(../img/bg/1section.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+main section.section1 .section1_wrapper .column1 {
+  height: 27.9rem;
+  max-width: 33.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main section.section1 .section1_wrapper .column1 .logo {
+  width: 13.5rem;
+}
+main section.section1 .section1_wrapper .column1 h1 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: #000000;
+  color: white;
+}
+main section.section1 .section1_wrapper .column1 .underline {
+  width: 8.5rem;
+}
+main section.section1 .section1_wrapper .column1 h5 {
+  width: 13.5rem;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1rem;
+  display: flex;
+  align-items: center;
+  color: #000000;
+  color: white;
+}
+main section.section1 .section1_wrapper .column1 a .button_1 {
+  background: inherit;
+  border: 2px solid #ffffff;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+  color: #ffffff;
+  transition: all 0.4s;
+  width: 13.5rem;
+  height: 2.9rem;
+}
+main section.section1 .section1_wrapper .column1 a .button_1:hover {
+  border: 2px solid #ec7979;
+  color: #ec7979;
+}
+main section.section1 .section1_wrapper .column1 a .button_1:active {
+  background: #833030;
+  border: 2px solid #ab4949;
+  color: #FFFFFF;
+}
+
+@media (max-width: 1025px) {
+  html {
+    font-size: 15px;
+  }
+  header .header_wrapper .logo {
+    max-width: 8rem;
+  }
+  header .header_wrapper nav {
+    font-size: 12px;
+    margin-right: 0.6rem;
+  }
+}/*# sourceMappingURL=main.css.map */
