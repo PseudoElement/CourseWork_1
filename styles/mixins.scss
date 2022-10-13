@@ -1,4 +1,40 @@
 //////STYLES
+@mixin input-text-style {
+    border-bottom: 1px solid #bdbdbd;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #bdbdbd;
+    @content;
+    &:focus{
+        border-bottom: red 1px solid;
+    }
+}
+@mixin input-submit-style {
+    background: #ec7979;
+    border-radius: 0px 0px 10px 10px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    height: 60px;
+    transition: all .4s;
+    &:hover{
+        background: #AB4949;
+    }
+    &:active{
+        background: #EC7979;
+    }
+}
 @mixin h1-style {
     font-family: "Raleway";
     font-style: normal;
@@ -39,8 +75,6 @@
     font-weight: 700;
     font-size: 1.2rem;
     line-height: 1.65rem;
-    display: flex;
-    align-items: center;
     text-transform: uppercase;
     color: #000000;
     @content;
@@ -88,7 +122,7 @@
     &:active {
         background: #833030;
         border: 2px solid #ab4949;
-        color: #FFFFFF;
+        color: #ffffff;
     }
 }
 @mixin nav-style {
@@ -124,6 +158,20 @@
                 nav {
                     font-size: 12px;
                     margin-right: 0.6rem;
+                }
+            }
+        }
+        main {
+            section {
+                padding: 0 1.2rem 0 3rem;
+                &.section1 {
+                    .section1_wrapper {
+                        .column2 {
+                            form {
+                                max-width: 398px;
+                            }
+                        }
+                    }
                 }
             }
         }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,10 +9,11 @@
     <link rel="icon" href="./img/images/favicon.jpg">
     <title>AXIS</title>
 </head>
+
 <body>
-    <header> 
+    <header>
         <div class="header_wrapper">
-            <img class="logo" src="./img/images/logo.png" alt="Logo">
+            <a href=""><img class="logo" src="./img/images/logo.png" alt="Logo"></a>
             <nav>
                 <a href="#Features">Features</a>
                 <a href="#About">About</a>
@@ -46,16 +48,22 @@
                     <a href="#"><button class="button_1">Download</button></a>
                 </div>
                 <div class="column2">
-                    <h4>
-                        Try Your <span>FREE</span> Trial Today
-                    </h4>
-                    <input type="text">
-                    <input type="text">
-                    <input type="text">
+                    <form action="#">
+                        <h4>
+                            Try Your<span> FREE </span>Trial Today
+                        </h4>
+                        <div class="middle">
+                            <input type="text" required placeholder="Name">
+                            <input type="email" required placeholder="Email">
+                            <input type="password" required placeholder="Password">
+                        </div>
+                        <input class="input-submit" type="submit" value="Get Started">
+                    </form>
                 </div>
-            </div>            
+            </div>
         </section>
     </main>
-    
+
 </body>
+
 </html>
