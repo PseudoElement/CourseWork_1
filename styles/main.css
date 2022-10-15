@@ -91,6 +91,7 @@ h6 {
 
 header {
   position: fixed;
+  z-index: 15;
   top: 0;
   right: 0;
   left: 0;
@@ -128,12 +129,15 @@ header .header_wrapper .menu {
 }
 
 main section {
-  padding: 0 8.5rem;
+  padding: 0 10%;
 }
 main section.section1 {
   margin-top: 3.6rem;
   background: url(../img/bg/1section.jpg) no-repeat;
   background-size: 100% 100%;
+}
+main section.section1:hover {
+  transition: opacity 0.4s;
 }
 main section.section1 .section1_wrapper {
   padding: 12% 0 8% 0;
@@ -179,6 +183,8 @@ main section.section1 .section1_wrapper .column1 h5 {
   color: white;
 }
 main section.section1 .section1_wrapper .column1 a .button_1 {
+  width: 13.5rem;
+  height: 2.9rem;
   background: inherit;
   border: 2px solid #ffffff;
   font-family: "Open Sans";
@@ -192,8 +198,6 @@ main section.section1 .section1_wrapper .column1 a .button_1 {
   text-transform: capitalize;
   color: #ffffff;
   transition: all 0.4s;
-  width: 13.5rem;
-  height: 2.9rem;
 }
 main section.section1 .section1_wrapper .column1 a .button_1:hover {
   border: 2px solid #ec7979;
@@ -264,10 +268,229 @@ main section.section1 .section1_wrapper .column2 .input-submit {
   transition: all 0.4s;
 }
 main section.section1 .section1_wrapper .column2 .input-submit:hover {
-  background: #AB4949;
+  background: #ab4949;
 }
 main section.section1 .section1_wrapper .column2 .input-submit:active {
-  background: #EC7979;
+  background: #ec7979;
+}
+main section.section2 {
+  background: #f8efef;
+}
+main section.section2 .section2_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+main section.section2 .section2_wrapper .info {
+  max-width: 23.5rem;
+  min-width: 16rem;
+  margin-right: 1.4rem;
+}
+main section.section2 .section2_wrapper .info .row1 {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.65rem;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 1.8rem;
+}
+main section.section2 .section2_wrapper .info .row2 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1rem;
+  display: flex;
+  align-items: center;
+  color: #000000;
+  color: #86878b;
+}
+main section.section2 .section2_wrapper .links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 34rem;
+}
+main section.section2 .section2_wrapper .links a:not(a:last-child) {
+  margin-right: 1rem;
+}
+main section.section2 .section2_wrapper .links svg:hover path {
+  transition: all 0.4s;
+  fill: #ec7979;
+}
+main section.section3 .section3_wrapper {
+  margin-top: 5rem;
+}
+main section.section3 .section3_wrapper .tab {
+  position: relative;
+}
+main section.section3 .section3_wrapper .tab:nth-child(2) input {
+  left: 9.2rem;
+}
+main section.section3 .section3_wrapper .tab:nth-child(3) input {
+  left: 18.4rem;
+}
+main section.section3 .section3_wrapper .tab input {
+  position: absolute;
+  top: -39px;
+  z-index: 10;
+  width: 9.2rem;
+  cursor: pointer;
+  visibility: hidden;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+}
+main section.section3 .section3_wrapper .tab input:checked:before {
+  border-radius: 5px 5px 0px 0px;
+  border: 1px solid #C6CBCD;
+  border-bottom: none;
+  background: white;
+}
+main section.section3 .section3_wrapper .tab input:checked ~ .content {
+  display: flex;
+}
+main section.section3 .section3_wrapper .tab input:before {
+  height: 40px;
+  visibility: visible;
+  content: "TAB";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main section.section3 .section3_wrapper .tab .content {
+  position: absolute;
+  z-index: 0;
+  top: 0rem;
+  max-width: 79rem;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5rem;
+  border: 1px solid #c6cbcd;
+}
+main section.section3 .section3_wrapper .tab .content .info {
+  margin-right: 1.5rem;
+  height: 21rem;
+  min-width: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main section.section3 .section3_wrapper .tab .content .info h3 {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+main section.section3 .section3_wrapper .tab .content .info h5 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1rem;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+main section.section3 .section3_wrapper .tab .content .info a .button_2 {
+  background: #ec7979;
+  width: 13.5rem;
+  height: 2.9rem;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.9rem;
+  line-height: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+main section.section3 .section3_wrapper .tab .content .info a .button_2:hover {
+  background: #ab4949;
+}
+main section.section3 .section3_wrapper .tab .content .info a .button_2:active {
+  background: #ec7979;
+  box-shadow: inset 0px 0px 10px #ab4949;
+}
+main section.section3 .section3_wrapper .tab .content img {
+  flex: 1 1 auto;
+  width: 23.5rem;
+  height: 25rem;
+}
+main section.section4 {
+  margin-top: 35rem;
+}
+main section.section4 .section4_wrapper {
+  display: flex;
+  flex-direction: column;
+}
+main section.section4 .section4_wrapper h2 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  display: flex;
+  align-items: center;
+  color: #000000;
+  margin-bottom: 2rem;
+  align-self: center;
+}
+main section.section4 .section4_wrapper > img {
+  align-self: center;
+  max-width: 8.5rem;
+  margin-bottom: 2rem;
+}
+main section.section4 .section4_wrapper h5 {
+  align-self: center;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1rem;
+  display: flex;
+  align-items: center;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+main section.section4 .section4_wrapper .columns {
+  display: flex;
+}
+main section.section4 .section4_wrapper .columns .column {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+main section.section4 .section4_wrapper .columns .column:not(.column:last-child) {
+  margin-right: 2rem;
+}
+main section.section4 .section4_wrapper .columns .column img {
+  max-width: 8.5rem;
+  max-height: 8.5rem;
+}
+main section.section4 .section4_wrapper .columns .column h4 {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.65rem;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 8%;
+  text-align: center;
 }
 
 @media (max-width: 1025px) {
@@ -282,9 +505,12 @@ main section.section1 .section1_wrapper .column2 .input-submit:active {
     margin-right: 0.6rem;
   }
   main section {
-    padding: 0 1.2rem 0 3rem;
+    padding: 0 1rem 0 1.86rem;
+  }
+  main section.section1 {
+    padding: 0 1rem 0 7.6rem;
   }
   main section.section1 .section1_wrapper .column2 form {
-    max-width: 398px;
+    max-width: 350px;
   }
 }/*# sourceMappingURL=main.css.map */

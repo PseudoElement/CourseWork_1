@@ -4,6 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Raleway:wght@100;200;300;400;500;600;700&display=swap");
 header {
     position: fixed;
+    z-index: 15;
     top: 0;
     right: 0;
     left: 0;
@@ -27,16 +28,20 @@ header {
     }
 }
 main {
-    section {  
-        padding: 0 8.5rem;
-        &.section1 { 
+    section {
+        padding: 0 10%;
+        &.section1 {
             margin-top: 3.6rem;
-            background: url(../img/bg/1section.jpg) no-repeat;
-            background-size:100% 100%;
+            background:url(../img/bg/1section.jpg) no-repeat;
+            background-size: 100% 100%;
+            &:hover{
+                transition: opacity .4s;
+                //opacity: 1.8;
+            }
             .section1_wrapper {
-                padding: 12% 0 8% 0; 
-                display: flex;   
-                justify-content: space-between; 
+                padding: 12% 0 8% 0;
+                display: flex;
+                justify-content: space-between;
                 .column1 {
                     height: 27.9rem;
                     max-width: 33.5rem;
@@ -64,13 +69,11 @@ main {
                     a {
                         .button_1 {
                             @include button_1-style;
-                            width: 13.5rem;
-                            height: 2.9rem;
                         }
                     }
                 }
                 .column2 {
-                    form { 
+                    form {
                         padding-top: 1rem;
                         width: 470px;
                         height: 450px;
@@ -79,28 +82,195 @@ main {
                         display: flex;
                         flex-direction: column;
                         //align-items: center;
-                        justify-content: space-between;   
+                        justify-content: space-between;
                         h4 {
                             @include h4-style {
-                                align-self: center ;
+                                align-self: center;
                                 span {
                                     color: #ec7979;
                                 }
                             }
                             margin: 0 2.5rem;
                         }
-                        .middle{display:flex;
+                        .middle {
+                            display: flex;
                             flex-direction: column;
-                            input{
-                                @include input-text-style{
+                            input {
+                                @include input-text-style {
                                     padding-bottom: 0.75rem;
-                                    margin: 0 50px 40px 50px; 
-                                }  
-                            }  
+                                    margin: 0 50px 40px 50px;
+                                }
+                            }
                         }
-                        } 
-                        .input-submit{   
-                            @include input-submit-style;
+                    }
+                    .input-submit {
+                        @include input-submit-style;
+                    }
+                }
+            }
+        }
+        &.section2 {
+            background: #f8efef;
+            .section2_wrapper {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 1rem 0;
+                .info {
+                    max-width: 23.5rem;
+                    min-width: 16rem;
+                    margin-right: 1.4rem;
+                    .row1 {
+                        @include h4-style;
+                        margin-bottom: 1.8rem;
+                    }
+                    .row2 {
+                        @include h5-style {
+                            color: #86878b;
+                        }
+                    }
+                }
+                .links {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    width: 34rem;
+                    a:not(a:last-child) {
+                        margin-right: 1rem;
+                    }
+                    svg:hover {
+                        path {
+                            transition: all 0.4s;
+                            fill: #ec7979;
+                        }
+                    }
+                }
+            }
+        }
+        &.section3 {
+            .section3_wrapper {
+                margin-top: 5rem;
+                //position: relative;
+                .tab {position: relative;
+                    // top: 0rem;
+                    &:nth-child(2){
+                        input{
+                            left: 9.2rem;
+                            //top: -33px;
+                        }
+                    }
+                    &:nth-child(3){
+                        input{
+                            left: 18.4rem;
+                            //top: -43px;
+                        }
+                    }
+                    input {position: absolute;
+                        top: -39px;
+                        z-index: 10;
+                        width: 9.2rem;
+                        cursor: pointer;
+                        visibility: hidden;
+                        font-family: "Open Sans";
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 19px;
+                        &:checked {
+                            &:before{//height: 40px;  
+                                border-radius: 5px 5px 0px 0px;
+                                border: 1px solid #C6CBCD;
+                                border-bottom: none;
+                                background: white;
+                            }
+                            ~ .content {
+                                display: flex;
+                            }
+                        }
+                        &:before {
+                            height: 40px;
+                            visibility: visible;
+                            content: "TAB";
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+                    .content {
+                        position: absolute;
+                        z-index: 0;
+                        top: 0rem;
+                        max-width: 79rem;
+                        display: none;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding-left: 5rem;
+                        border: 1px solid #c6cbcd;
+                        .info {
+                            margin-right: 1.5rem;
+                            height: 21rem;
+                            min-width: 15rem;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            h3 {
+                                @include h3-style;
+                            }
+                            h5 {
+                                @include h5-style;
+                            }
+                            a {
+                                .button_2 {
+                                    @include button_2-style;
+                                }
+                            }
+                        }
+                        img {flex: 1 1 auto;
+                            width: 23.5rem;
+                            height: 25rem;
+                        }
+                    }
+                }
+            }
+        }
+        &.section4{
+            margin-top: 35rem;
+            .section4_wrapper{
+                display: flex;
+                flex-direction: column;
+                h2{
+                    @include h2-style;
+                    margin-bottom: 2rem;
+                    align-self: center;
+                }
+                >img{align-self: center;
+                    max-width: 8.5rem;
+                    margin-bottom: 2rem;
+                }
+                h5{align-self: center;
+                    @include h5-style{
+                        text-align: center;
+                    }
+                    margin-bottom: 2rem;
+                }
+                .columns{
+                    display:flex;
+                    .column{
+                        &:not(.column:last-child){
+                            margin-right: 2rem;
+                        }
+                        display: flex;
+                        align-items: center; 
+                        flex-direction: column;
+                        img{
+                            max-width: 8.5rem;
+                            max-height: 8.5rem;
+                        }
+                        h4{
+                            @include h4-style;
+                            margin-bottom: 8%;
+                            text-align: center;
+                        }
                     }
                 }
             }
