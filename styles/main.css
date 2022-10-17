@@ -133,11 +133,8 @@ main section {
 }
 main section.section1 {
   margin-top: 3.6rem;
-  background: url(../img/bg/1section.jpg) no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/bg/1section.jpg);
   background-size: 100% 100%;
-}
-main section.section1:hover {
-  transition: opacity 0.4s;
 }
 main section.section1 .section1_wrapper {
   padding: 12% 0 8% 0;
@@ -179,6 +176,7 @@ main section.section1 .section1_wrapper .column1 h5 {
   line-height: 1rem;
   display: flex;
   align-items: center;
+  justify-content: center;
   color: #000000;
   color: white;
 }
@@ -219,14 +217,17 @@ main section.section1 .section1_wrapper .column2 form {
   justify-content: space-between;
 }
 main section.section1 .section1_wrapper .column2 form h4 {
+  align-self: center;
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 1.2rem;
   line-height: 1.65rem;
-  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #000000;
-  align-self: center;
+  display: block;
   margin: 0 2.5rem;
 }
 main section.section1 .section1_wrapper .column2 form h4 span {
@@ -253,6 +254,7 @@ main section.section1 .section1_wrapper .column2 form .middle input:focus {
   border-bottom: red 1px solid;
 }
 main section.section1 .section1_wrapper .column2 .input-submit {
+  cursor: pointer;
   background: #ec7979;
   border-radius: 0px 0px 10px 10px;
   font-family: "Open Sans";
@@ -293,8 +295,12 @@ main section.section2 .section2_wrapper .info .row1 {
   font-weight: 700;
   font-size: 1.2rem;
   line-height: 1.65rem;
-  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #000000;
+  align-items: flex-start;
+  justify-content: flex-start;
   margin-bottom: 1.8rem;
 }
 main section.section2 .section2_wrapper .info .row2 {
@@ -305,6 +311,7 @@ main section.section2 .section2_wrapper .info .row2 {
   line-height: 1rem;
   display: flex;
   align-items: center;
+  justify-content: center;
   color: #000000;
   color: #86878b;
 }
@@ -348,7 +355,7 @@ main section.section3 .section3_wrapper .tab input {
 }
 main section.section3 .section3_wrapper .tab input:checked:before {
   border-radius: 5px 5px 0px 0px;
-  border: 1px solid #C6CBCD;
+  border: 1px solid #c6cbcd;
   border-bottom: none;
   background: white;
 }
@@ -400,6 +407,7 @@ main section.section3 .section3_wrapper .tab .content .info h5 {
   line-height: 1rem;
   display: flex;
   align-items: center;
+  justify-content: center;
   color: #000000;
 }
 main section.section3 .section3_wrapper .tab .content .info a .button_2 {
@@ -419,6 +427,7 @@ main section.section3 .section3_wrapper .tab .content .info a .button_2 {
 }
 main section.section3 .section3_wrapper .tab .content .info a .button_2:hover {
   background: #ab4949;
+  transition: all 0.4s;
 }
 main section.section3 .section3_wrapper .tab .content .info a .button_2:active {
   background: #ec7979;
@@ -431,6 +440,7 @@ main section.section3 .section3_wrapper .tab .content img {
 }
 main section.section4 {
   margin-top: 35rem;
+  margin-bottom: 2rem;
 }
 main section.section4 .section4_wrapper {
   display: flex;
@@ -439,13 +449,15 @@ main section.section4 .section4_wrapper {
 main section.section4 .section4_wrapper h2 {
   font-family: "Raleway";
   font-style: normal;
+  text-transform: uppercase;
   font-weight: 400;
   font-size: 1.8rem;
   line-height: 2.1rem;
   display: flex;
   align-items: center;
+  justify-content: center;
   color: #000000;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   align-self: center;
 }
 main section.section4 .section4_wrapper > img {
@@ -462,6 +474,7 @@ main section.section4 .section4_wrapper h5 {
   line-height: 1rem;
   display: flex;
   align-items: center;
+  justify-content: center;
   color: #000000;
   text-align: center;
   margin-bottom: 2rem;
@@ -487,10 +500,258 @@ main section.section4 .section4_wrapper .columns .column h4 {
   font-weight: 700;
   font-size: 1.2rem;
   line-height: 1.65rem;
-  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #000000;
   margin-bottom: 8%;
   text-align: center;
+}
+main section.section5 {
+  padding-top: 5rem;
+  padding-bottom: 2.5rem;
+  background: #f5f5f5;
+}
+main section.section5 .section5_wrapper {
+  display: flex;
+  flex-direction: column;
+}
+main section.section5 .section5_wrapper > h2 {
+  align-self: center;
+  font-family: "Raleway";
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  margin-bottom: 3rem;
+}
+main section.section5 .section5_wrapper img {
+  align-self: center;
+  max-width: 8.5rem;
+  margin-bottom: 2rem;
+}
+main section.section5 .section5_wrapper > h5 {
+  align-self: center;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  margin-bottom: 4rem;
+}
+main section.section5 .section5_wrapper .columns {
+  display: flex;
+  justify-content: space-between;
+}
+main section.section5 .section5_wrapper .columns a {
+  width: 18.5rem;
+  height: 25.5rem;
+}
+main section.section5 .section5_wrapper .columns a:not(a:last-child) {
+  margin-right: 2rem;
+}
+main section.section5 .section5_wrapper .columns .column {
+  position: relative;
+  top: 0rem;
+}
+main section.section5 .section5_wrapper .columns .column:hover {
+  -webkit-animation-name: column-jump;
+          animation-name: column-jump;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  box-shadow: 0 0 10px 2px gray;
+  transition: box-shadow 0.5s;
+}
+main section.section5 .section5_wrapper .columns .column h4,
+main section.section5 .section5_wrapper .columns .column h2,
+main section.section5 .section5_wrapper .columns .column h5 {
+  border: 2px solid #f5f5f5;
+}
+main section.section5 .section5_wrapper .columns .column h4 {
+  height: 3rem;
+  background: #333333;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.65rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  color: white;
+}
+main section.section5 .section5_wrapper .columns .column h2 {
+  height: 5rem;
+  border-top: none;
+  background: #333333;
+  font-family: "Raleway";
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  margin-bottom: 3rem;
+  font-weight: 700;
+  margin-bottom: 0;
+  color: white;
+}
+main section.section5 .section5_wrapper .columns .column h5 {
+  height: 2.5rem;
+  background: #ffffff;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  color: #86878b;
+}
+main section.section5 .section5_wrapper .columns .column :nth-child(3) {
+  background: #333333;
+  border-top: none;
+}
+@-webkit-keyframes column-jump {
+  0% {
+    top: 0rem;
+  }
+  100% {
+    top: -1rem;
+  }
+}
+@keyframes column-jump {
+  0% {
+    top: 0rem;
+  }
+  100% {
+    top: -1rem;
+  }
+}
+main section.section6 {
+  padding: 0 0;
+  margin-top: 7.5rem;
+  padding-bottom: 3.2rem;
+}
+main section.section6 .section6_wrapper {
+  display: flex;
+  flex-direction: column;
+}
+main section.section6 .section6_wrapper h2 {
+  font-family: "Raleway";
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  margin-bottom: 3rem;
+}
+main section.section6 .section6_wrapper > img {
+  align-self: center;
+  max-width: 8.5rem;
+  margin-bottom: 2rem;
+}
+main section.section6 .section6_wrapper h5 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  margin-bottom: 4rem;
+}
+main section.section6 .section6_wrapper .swiper {
+  max-width: 90vw;
+  overflow: hidden;
+}
+main section.section6 .section6_wrapper .swiper .swiper-wrapper .swiper-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main section.section6 .section6_wrapper .swiper .swiper-wrapper .swiper-slide .feedback {
+  align-self: center;
+  background: #e2e2e2;
+  border-radius: 10px;
+  padding: 1.9rem 1.4rem;
+  max-width: 18.5rem;
+  max-height: 9rem;
+  text-align: center;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+}
+main section.section6 .section6_wrapper .swiper .swiper-wrapper .swiper-slide .triangle {
+  align-self: center;
+  margin-left: -5rem;
+  margin-bottom: 2.3rem;
+}
+main section.section6 .section6_wrapper .swiper .swiper-wrapper .swiper-slide .user {
+  display: flex;
+}
+main section.section6 .section6_wrapper .swiper .swiper-wrapper .swiper-slide .user img {
+  margin-right: 1.5rem;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+main section.section6 .section6_wrapper .swiper .swiper-wrapper .swiper-slide .user .user-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main section.section6 .section6_wrapper .swiper .swiper-wrapper .swiper-slide .user .user-data .user-name {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.65rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+}
+main section.section6 .section6_wrapper .swiper .swiper-wrapper .swiper-slide .user .user-data .user-post {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  justify-content: flex-start;
 }
 
 @media (max-width: 1025px) {
