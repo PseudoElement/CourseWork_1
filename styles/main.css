@@ -1,0 +1,1244 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Raleway:wght@100;200;300;400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a {
+  background: none;
+}
+
+a :focus,
+a :active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 20px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button ::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a :visited {
+  text-decoration: none;
+}
+
+a :hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+header {
+  position: fixed;
+  z-index: 15;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: #000;
+}
+header .header_wrapper {
+  margin: 0 1rem 0 5.764rem;
+  height: 3.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .header_wrapper > nav {
+  width: 28.5rem;
+  margin-right: 8.5rem;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-transform: capitalize;
+}
+header .header_wrapper > nav a {
+  color: white;
+}
+header .header_wrapper > nav a:hover {
+  color: goldenrod;
+  transition: all 0.4s;
+}
+header .header_wrapper .menu {
+  position: relative;
+  display: none;
+}
+header .header_wrapper .menu input {
+  visibility: hidden;
+  position: relative;
+}
+header .header_wrapper .menu input::before {
+  visibility: visible;
+  position: absolute;
+  content: url(../img/images/menu.png);
+  top: -20px;
+  left: 0px;
+}
+header .header_wrapper .menu input:checked::before {
+  content: url(../img/images/EXIT.png);
+}
+header .header_wrapper .menu input:checked ~ nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+header .header_wrapper .menu nav {
+  background: #000000;
+  width: 60vw;
+  height: 60vh;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-transform: capitalize;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  display: none;
+}
+header .header_wrapper .menu nav a {
+  color: white;
+}
+header .header_wrapper .menu nav a:hover {
+  color: goldenrod;
+  transition: all 0.4s;
+}
+
+main section {
+  padding: 0 10%;
+}
+main section.section1 {
+  margin-top: 3.6rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/bg/1section.jpg);
+  background-size: 100% 100%;
+}
+main section.section1 .section1_wrapper {
+  padding: 12% 0 8% 0;
+  display: flex;
+  justify-content: space-between;
+}
+main section.section1 .section1_wrapper .column1 {
+  height: 27.9rem;
+  max-width: 33.5rem;
+  min-width: 18rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main section.section1 .section1_wrapper .column1 .logo {
+  width: 13.5rem;
+}
+main section.section1 .section1_wrapper .column1 h1 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: #000000;
+  color: rgb(255, 255, 255);
+}
+main section.section1 .section1_wrapper .column1 .underline {
+  width: 8.5rem;
+}
+main section.section1 .section1_wrapper .column1 h5 {
+  width: 13.5rem;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  color: white;
+}
+main section.section1 .section1_wrapper .column1 a .button_1 {
+  width: 13.5rem;
+  height: 2.9rem;
+  background: inherit;
+  border: 2px solid #ffffff;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+  color: #ffffff;
+  transition: all 0.4s;
+}
+main section.section1 .section1_wrapper .column1 a .button_1:hover {
+  border: 2px solid #ec7979;
+  color: #ec7979;
+}
+main section.section1 .section1_wrapper .column1 a .button_1:active {
+  background: #833030;
+  border: 2px solid #ab4949;
+  color: #ffffff;
+}
+main section.section1 .section1_wrapper .column2 form {
+  padding-top: 1rem;
+  width: 470px;
+  height: 450px;
+  background: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main section.section1 .section1_wrapper .column2 form h4 {
+  align-self: center;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.65rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  text-align: center;
+  display: block;
+  margin: 0 2.5rem;
+}
+main section.section1 .section1_wrapper .column2 form h4 span {
+  color: #ec7979;
+}
+main section.section1 .section1_wrapper .column2 form .middle {
+  display: flex;
+  flex-direction: column;
+}
+main section.section1 .section1_wrapper .column2 form .middle input {
+  border-bottom: 1px solid #bdbdbd;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  color: #bdbdbd;
+  padding-bottom: 0.75rem;
+  margin: 0 50px 40px 50px;
+}
+main section.section1 .section1_wrapper .column2 form .middle input:focus {
+  border-bottom: red 1px solid;
+}
+main section.section1 .section1_wrapper .column2 .input-submit {
+  cursor: pointer;
+  background: #ec7979;
+  border-radius: 0px 0px 10px 10px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  height: 3rem;
+  transition: all 0.4s;
+}
+main section.section1 .section1_wrapper .column2 .input-submit:hover {
+  background: #ab4949;
+}
+main section.section1 .section1_wrapper .column2 .input-submit:active {
+  background: #ec7979;
+}
+main section.section2 {
+  background: #f8efef;
+}
+main section.section2 .section2_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+main section.section2 .section2_wrapper .info {
+  max-width: 23.5rem;
+  min-width: 16rem;
+  margin-right: 1.4rem;
+  align-items: center;
+}
+main section.section2 .section2_wrapper .info .row1 {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.65rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  text-align: center;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-bottom: 1.8rem;
+}
+main section.section2 .section2_wrapper .info .row2 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  color: #86878b;
+}
+main section.section2 .section2_wrapper .links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 34rem;
+}
+main section.section2 .section2_wrapper .links a:not(a:last-child) {
+  margin-right: 1rem;
+}
+main section.section2 .section2_wrapper .links svg:hover path {
+  transition: all 0.4s;
+  fill: #ec7979;
+}
+main section.section3 .section3_wrapper {
+  margin-top: 5rem;
+}
+main section.section3 .section3_wrapper .tab {
+  position: relative;
+}
+main section.section3 .section3_wrapper .tab:nth-child(2) input {
+  left: 15%;
+}
+main section.section3 .section3_wrapper .tab:nth-child(3) input {
+  left: 30%;
+}
+main section.section3 .section3_wrapper .tab input {
+  position: absolute;
+  top: -39px;
+  z-index: 10;
+  width: 15%;
+  cursor: pointer;
+  visibility: hidden;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+}
+main section.section3 .section3_wrapper .tab input:checked:before {
+  border-radius: 5px 5px 0px 0px;
+  border: 1px solid #c6cbcd;
+  border-bottom: none;
+  background: white;
+}
+main section.section3 .section3_wrapper .tab input:checked ~ .content {
+  display: flex;
+}
+main section.section3 .section3_wrapper .tab input:before {
+  height: 40px;
+  visibility: visible;
+  content: "TAB";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main section.section3 .section3_wrapper .tab .content {
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+  top: 0rem;
+  max-width: 79rem;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5rem;
+  border: 1px solid #c6cbcd;
+}
+main section.section3 .section3_wrapper .tab .content .info {
+  margin-right: 1.5rem;
+  height: 21rem;
+  min-width: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main section.section3 .section3_wrapper .tab .content .info h3 {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+main section.section3 .section3_wrapper .tab .content .info h5 {
+  max-width: 28.5rem;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+}
+main section.section3 .section3_wrapper .tab .content .info a .button_2 {
+  background: #ec7979;
+  width: 13.5rem;
+  height: 2.9rem;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.9rem;
+  line-height: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+main section.section3 .section3_wrapper .tab .content .info a .button_2:hover {
+  background: #ab4949;
+  transition: all 0.4s;
+}
+main section.section3 .section3_wrapper .tab .content .info a .button_2:active {
+  background: #ec7979;
+  box-shadow: inset 0px 0px 10px #ab4949;
+}
+main section.section3 .section3_wrapper .tab .content img {
+  flex: 0 1 50%;
+  width: 23.5rem;
+  height: 25rem;
+}
+main section.section4 {
+  margin-top: 35rem;
+  margin-bottom: 2rem;
+}
+main section.section4 .section4_wrapper {
+  display: flex;
+  flex-direction: column;
+}
+main section.section4 .section4_wrapper h2 {
+  font-family: "Raleway";
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  margin-bottom: 3rem;
+  align-self: center;
+}
+main section.section4 .section4_wrapper > img {
+  align-self: center;
+  max-width: 8.5rem;
+  margin-bottom: 2rem;
+}
+main section.section4 .section4_wrapper h5 {
+  align-self: center;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+main section.section4 .section4_wrapper .columns {
+  display: flex;
+}
+main section.section4 .section4_wrapper .columns .column {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+main section.section4 .section4_wrapper .columns .column:not(.column:last-child) {
+  margin-right: 2rem;
+}
+main section.section4 .section4_wrapper .columns .column img {
+  max-width: 8.5rem;
+  max-height: 8.5rem;
+}
+main section.section4 .section4_wrapper .columns .column h4 {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.65rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 8%;
+  text-align: center;
+}
+main section.section5 {
+  padding-bottom: 2.5rem;
+  background: #f5f5f5;
+}
+main section.section5 .section5_wrapper {
+  display: flex;
+  flex-direction: column;
+}
+main section.section5 .section5_wrapper > h2 {
+  margin-top: 5.5rem;
+  align-self: center;
+  font-family: "Raleway";
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  margin-bottom: 3rem;
+}
+main section.section5 .section5_wrapper img {
+  align-self: center;
+  max-width: 8.5rem;
+  margin-bottom: 2rem;
+}
+main section.section5 .section5_wrapper > h5 {
+  align-self: center;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  margin-bottom: 4rem;
+}
+main section.section5 .section5_wrapper .columns {
+  display: flex;
+  justify-content: space-between;
+}
+main section.section5 .section5_wrapper .columns a {
+  width: 18.5rem;
+  height: 25.5rem;
+}
+main section.section5 .section5_wrapper .columns a:not(a:last-child) {
+  margin-right: 2rem;
+}
+main section.section5 .section5_wrapper .columns .column {
+  position: relative;
+  top: 0rem;
+}
+main section.section5 .section5_wrapper .columns .column:hover {
+  -webkit-animation-name: column-jump;
+          animation-name: column-jump;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  box-shadow: 0 0 10px 2px gray;
+  transition: box-shadow 0.5s;
+}
+main section.section5 .section5_wrapper .columns .column h4,
+main section.section5 .section5_wrapper .columns .column h2,
+main section.section5 .section5_wrapper .columns .column h5 {
+  border: 2px solid #f5f5f5;
+}
+main section.section5 .section5_wrapper .columns .column h4 {
+  height: 3rem;
+  background: #333333;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.65rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  text-align: center;
+  color: white;
+}
+main section.section5 .section5_wrapper .columns .column h2 {
+  height: 5rem;
+  border-top: none;
+  background: #333333;
+  font-family: "Raleway";
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  margin-bottom: 3rem;
+  font-weight: 700;
+  margin-bottom: 0;
+  color: white;
+}
+main section.section5 .section5_wrapper .columns .column h5 {
+  height: 2.5rem;
+  background: #ffffff;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  color: #86878b;
+}
+main section.section5 .section5_wrapper .columns .column :nth-child(3) {
+  background: #333333;
+  border-top: none;
+}
+@-webkit-keyframes column-jump {
+  0% {
+    top: 0rem;
+  }
+  100% {
+    top: -1rem;
+  }
+}
+@keyframes column-jump {
+  0% {
+    top: 0rem;
+  }
+  100% {
+    top: -1rem;
+  }
+}
+main section.section6 {
+  padding: 0 0;
+  margin-top: 5.5rem;
+  padding-bottom: 3.2rem;
+}
+main section.section6 .section6_wrapper {
+  display: flex;
+  flex-direction: column;
+}
+main section.section6 .section6_wrapper h2 {
+  font-family: "Raleway";
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  margin-bottom: 3rem;
+}
+main section.section6 .section6_wrapper > img {
+  align-self: center;
+  max-width: 8.5rem;
+  margin-bottom: 2rem;
+}
+main section.section6 .section6_wrapper h5 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  margin-bottom: 4rem;
+}
+main section.section6 .section6_wrapper .swiper {
+  max-width: 90vw;
+  overflow: hidden;
+}
+main section.section6 .section6_wrapper .swiper .swiper-wrapper .swiper-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main section.section6 .section6_wrapper .swiper .swiper-wrapper .swiper-slide .feedback {
+  align-self: center;
+  background: #e2e2e2;
+  border-radius: 10px;
+  padding: 1.9rem 1.4rem;
+  max-width: 18.5rem;
+  max-height: 9rem;
+  text-align: center;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+}
+main section.section6 .section6_wrapper .swiper .swiper-wrapper .swiper-slide .triangle {
+  align-self: center;
+  margin-left: -5rem;
+  margin-bottom: 2.3rem;
+}
+main section.section6 .section6_wrapper .swiper .swiper-wrapper .swiper-slide .user {
+  display: flex;
+}
+main section.section6 .section6_wrapper .swiper .swiper-wrapper .swiper-slide .user img {
+  margin-right: 1.5rem;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+main section.section6 .section6_wrapper .swiper .swiper-wrapper .swiper-slide .user .user-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main section.section6 .section6_wrapper .swiper .swiper-wrapper .swiper-slide .user .user-data .user-name {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.65rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  text-align: center;
+}
+main section.section6 .section6_wrapper .swiper .swiper-wrapper .swiper-slide .user .user-data .user-post {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  justify-content: flex-start;
+}
+main section.section7 {
+  padding-top: 5.5rem;
+  padding-bottom: 2.5rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/bg/skyscrapers.png) no-repeat;
+  background-size: cover;
+}
+main section.section7 .section7_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main section.section7 .section7_wrapper h2 {
+  font-family: "Raleway";
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  margin-bottom: 3rem;
+  color: white;
+}
+main section.section7 .section7_wrapper img {
+  align-self: center;
+  align-self: center;
+  max-width: 8.5rem;
+  margin-bottom: 2rem;
+}
+main section.section7 .section7_wrapper h5 {
+  margin-bottom: 3.25rem;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  color: #ffffff;
+  text-align: center;
+}
+main section.section7 .section7_wrapper a button {
+  width: 13.5rem;
+  height: 2.9rem;
+  background: inherit;
+  border: 2px solid #ffffff;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+  color: #ffffff;
+  transition: all 0.4s;
+  width: 18.5rem;
+}
+main section.section7 .section7_wrapper a button:hover {
+  border: 2px solid #ec7979;
+  color: #ec7979;
+}
+main section.section7 .section7_wrapper a button:active {
+  background: #833030;
+  border: 2px solid #ab4949;
+  color: #ffffff;
+}
+main section.section8 {
+  padding-top: 5.5rem;
+  padding-bottom: 2.5rem;
+}
+main section.section8 form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main section.section8 form h2 {
+  font-family: "Raleway";
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  margin-bottom: 3rem;
+}
+main section.section8 form img {
+  align-self: center;
+  max-width: 8.5rem;
+  margin-bottom: 2rem;
+}
+main section.section8 form h5 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  margin-bottom: 4.5rem;
+}
+main section.section8 form .inputs-and-textarea {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-bottom: 2.5rem;
+}
+main section.section8 form .inputs-and-textarea input,
+main section.section8 form .inputs-and-textarea textarea {
+  border-bottom: 1px solid #bdbdbd;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  color: #bdbdbd;
+  padding-bottom: 0.75rem;
+}
+main section.section8 form .inputs-and-textarea input:focus,
+main section.section8 form .inputs-and-textarea textarea:focus {
+  border-bottom: red 1px solid;
+}
+main section.section8 form .inputs-and-textarea .inputs-inputs {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 1.5rem;
+}
+main section.section8 form .inputs-and-textarea textarea {
+  flex: 1 1 50%;
+  resize: none;
+}
+main section.section8 form > input {
+  background: #ec7979;
+  border-radius: 0px 0px 10px 10px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  height: 3rem;
+  transition: all 0.4s;
+  border-radius: 0px;
+  width: 18.5rem;
+}
+main section.section8 form > input:hover {
+  background: #ab4949;
+}
+main section.section8 form > input:active {
+  background: #ec7979;
+}
+
+footer {
+  background: #000000;
+}
+footer .footer_wrapper {
+  padding: 2rem 0 1.35rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .footer_wrapper .links {
+  width: 28.8rem;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+footer .footer_wrapper .links svg:hover path {
+  transition: all 0.4s;
+  fill: #ec7979;
+}
+footer .footer_wrapper h5 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 15px;
+  }
+  header .header_wrapper .logo {
+    max-width: 8rem;
+  }
+  header .header_wrapper > nav {
+    font-size: 12px;
+    margin-right: 0.6rem;
+  }
+  main section {
+    padding: 0 1rem 0 1.86rem;
+  }
+  main section.section1 {
+    padding: 0 1rem 0 7.6rem;
+  }
+  main section.section1 .section1_wrapper .column2 form {
+    max-width: 350px;
+  }
+  main section.section3 .section3_wrapper .tab .content .info {
+    align-items: baseline;
+  }
+}
+@media (max-width: 767px) {
+  html {
+    font-size: 13.5px;
+  }
+  header {
+    padding: 0 2.59rem 0 1.19rem;
+  }
+  header .header_wrapper {
+    margin: 0 1rem 0 1rem;
+  }
+  header .header_wrapper > nav {
+    display: none;
+  }
+  header .header_wrapper .menu {
+    display: flex;
+  }
+  main h2 {
+    text-align: center !important;
+  }
+  main h5 {
+    text-align: center !important;
+  }
+  main section {
+    padding: 0 1.19rem 0 1.19rem;
+  }
+  main section.section1 {
+    padding: 0 1.19rem 0 1.19rem;
+  }
+  main section.section1 .section1_wrapper {
+    padding: 12% 0 8% 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  main section.section1 .section1_wrapper .column1 {
+    text-align: center;
+    max-width: none;
+    min-width: none;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  main section.section1 .section1_wrapper .column1 .logo {
+    margin-left: 64px;
+  }
+  main section.section1 .section1_wrapper .column1 h5 {
+    width: 100%;
+  }
+  main section.section1 .section1_wrapper .column1 a .button_1 {
+    width: 21.33rem;
+  }
+  main section.section1 .section1_wrapper .column2 form {
+    max-width: 21.33rem;
+  }
+  main section.section2 .section2_wrapper {
+    flex-direction: column;
+  }
+  main section.section2 .section2_wrapper .info {
+    min-width: none;
+    margin-right: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 34px;
+  }
+  main section.section2 .section2_wrapper .links {
+    width: 60%;
+  }
+  main section.section2 .section2_wrapper .links a:nth-child(1) svg {
+    width: 0.83rem;
+    height: 1.52rem;
+  }
+  main section.section2 .section2_wrapper .links a:nth-child(2) svg {
+    width: 1.57rem;
+    height: 17.29px;
+  }
+  main section.section2 .section2_wrapper .links a:nth-child(3) svg {
+    width: 19.5px;
+    height: 19.5px;
+  }
+  main section.section2 .section2_wrapper .links a:nth-child(4) svg {
+    width: 23.33px;
+    height: 21.67px;
+  }
+  main section.section2 .section2_wrapper .links a:nth-child(5) svg {
+    width: 19.51px;
+    height: 19.51px;
+  }
+  main section.section2 .section2_wrapper .links a:nth-child(6) svg {
+    width: 21.61px;
+    height: 21.08px;
+  }
+  main section.section2 .section2_wrapper .links a:nth-child(7) svg {
+    width: 25.86px;
+    height: 25.86px;
+  }
+  main section.section3 .section3_wrapper .tab input {
+    width: 33.333%;
+  }
+  main section.section3 .section3_wrapper .tab:nth-child(2) input {
+    left: 33.333%;
+  }
+  main section.section3 .section3_wrapper .tab:nth-child(3) input {
+    left: 66.666%;
+  }
+  main section.section3 .section3_wrapper .tab .content {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 1.5rem;
+    text-align: center;
+  }
+  main section.section3 .section3_wrapper .tab .content .info {
+    margin-right: 0;
+    align-items: center;
+  }
+  main section.section3 .section3_wrapper .tab .content .info h5 {
+    max-width: 500px;
+  }
+  main section.section3 .section3_wrapper .tab .content img {
+    display: none;
+  }
+  main section.section4 {
+    margin-top: 30rem;
+  }
+  main section.section4 .section4_wrapper {
+    align-items: center;
+  }
+  main section.section4 .section4_wrapper h2 {
+    text-align: center;
+  }
+  main section.section4 .section4_wrapper .columns {
+    flex-direction: column;
+  }
+  main section.section4 .section4_wrapper .columns .column:not(.column:last-child) {
+    margin-right: 0;
+  }
+  main section.section5 .section5_wrapper .columns a:not(a:last-child) {
+    margin-right: 0.5rem;
+  }
+  main section.section5 .section5_wrapper > h2 {
+    margin-top: 35px;
+  }
+  main section.section5 .section5_wrapper .columns {
+    flex-direction: column;
+    align-items: center;
+  }
+  main section.section5 .section5_wrapper .columns a {
+    width: 70%;
+    max-width: 300px;
+  }
+  main section.section5 .section5_wrapper .columns a:not(:last-child) {
+    margin-bottom: 27px;
+  }
+  main section.section6 {
+    margin-top: 35px;
+  }
+  main section.section7 {
+    padding-top: 35px;
+  }
+  main section.section8 {
+    padding-top: 35px;
+  }
+  main section.section8 form .inputs-and-textarea {
+    flex-direction: column;
+    max-width: 70%;
+  }
+  main section.section8 form .inputs-and-textarea .inputs-inputs {
+    flex: none;
+    height: 150px;
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+  footer .footer_wrapper .links {
+    width: 70%;
+  }
+  footer .footer_wrapper .links a:not(a:last-child) {
+    margin-right: 0.7rem;
+  }
+  footer .footer_wrapper .links a:nth-child(1) svg {
+    width: 0.83rem;
+    height: 1.52rem;
+  }
+  footer .footer_wrapper .links a:nth-child(2) svg {
+    width: 1.57rem;
+    height: 17.29px;
+  }
+  footer .footer_wrapper .links a:nth-child(3) svg {
+    width: 19.5px;
+    height: 19.5px;
+  }
+  footer .footer_wrapper .links a:nth-child(4) svg {
+    width: 23.33px;
+    height: 21.67px;
+  }
+  footer .footer_wrapper .links a:nth-child(5) svg {
+    width: 19.51px;
+    height: 19.51px;
+  }
+  footer .footer_wrapper .links a:nth-child(6) svg {
+    width: 21.61px;
+    height: 21.08px;
+  }
+  footer .footer_wrapper .links a:nth-child(7) svg {
+    width: 25.86px;
+    height: 25.86px;
+  }
+}/*# sourceMappingURL=main.css.map */
