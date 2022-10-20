@@ -1050,6 +1050,12 @@ footer .footer_wrapper h5 {
   header .header_wrapper .menu {
     display: flex;
   }
+  main h2 {
+    text-align: center !important;
+  }
+  main h5 {
+    text-align: center !important;
+  }
   main section {
     padding: 0 1.19rem 0 1.19rem;
   }
