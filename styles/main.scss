@@ -19,9 +19,10 @@ header {
         .logo {
         } 
         >nav {
-            width: 28.5rem;
+            width: 28.5rem; 
             margin-right: 8.5rem;
             @include nav-style;
+            justify-content: space-between;
         }
         .menu {
             position: relative;

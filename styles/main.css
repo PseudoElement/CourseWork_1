@@ -116,6 +116,7 @@ header .header_wrapper > nav {
   align-items: center;
   justify-content: center;
   text-transform: capitalize;
+  justify-content: space-between;
 }
 header .header_wrapper > nav a {
   color: white;
