@@ -186,7 +186,7 @@
 }
 //MEDIA
 @mixin media-1024px {
-    @media (max-width: 1025px) {
+    @media (max-width: 1024px) {
         html {
             font-size: 15px;
         }
@@ -195,7 +195,7 @@
                 .logo {
                     max-width: 8rem;
                 }
-                nav {
+                >nav {
                     font-size: 12px;
                     margin-right: 0.6rem;
                 }
@@ -237,6 +237,16 @@
         }
         header {
             padding: 0 2.59rem 0 1.19rem;
+            .header_wrapper{
+                margin: 0 1rem 0 1rem;
+                >nav{
+                    display:none;
+                }
+                .menu{
+                    display:flex;
+                }
+            }
+
         }
         main {
             section {
