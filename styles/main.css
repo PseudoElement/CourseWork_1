@@ -951,6 +951,7 @@ main section.section8 form .inputs-and-textarea .inputs-inputs {
 }
 main section.section8 form .inputs-and-textarea textarea {
   flex: 1 1 50%;
+  resize: none;
 }
 main section.section8 form > input {
   background: #ec7979;
