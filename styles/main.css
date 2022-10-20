@@ -384,16 +384,16 @@ main section.section3 .section3_wrapper .tab {
   position: relative;
 }
 main section.section3 .section3_wrapper .tab:nth-child(2) input {
-  left: 9.2rem;
+  left: 15%;
 }
 main section.section3 .section3_wrapper .tab:nth-child(3) input {
-  left: 18.4rem;
+  left: 30%;
 }
 main section.section3 .section3_wrapper .tab input {
   position: absolute;
   top: -39px;
   z-index: 10;
-  width: 9.2rem;
+  width: 15%;
   cursor: pointer;
   visibility: hidden;
   font-family: "Open Sans";
