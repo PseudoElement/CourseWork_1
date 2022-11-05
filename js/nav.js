@@ -5,7 +5,8 @@ const pricing = document.getElementById(`Pricing`);
 const reviews = document.getElementById(`Reviews`);
 const contacts = document.getElementById(`Contacts`);
 function scr(event) {
-    // header.style.display = 'none';
+    // Когда нажимаешь на кнопку навигации из любой точки документа, кроме начала,
+    //сначала возвращает на начало документа, а потом уже скроллит, потести
     if (event.target.className === '0') {
         setTimeout(function () {
             features.scrollIntoView({
