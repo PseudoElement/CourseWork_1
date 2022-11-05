@@ -1,7 +1,6 @@
 const arrOfLinks = document.querySelectorAll(`header nav a`);
 const features = document.getElementById(`Features`);
 const about = document.getElementById(`About`);
-const header = document.querySelector(`header`);
 const pricing = document.getElementById(`Pricing`);
 const reviews = document.getElementById(`Reviews`);
 const contacts = document.getElementById(`Contacts`);
